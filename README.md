@@ -12,3 +12,23 @@ ora，下载过程久的话，可以用于显示下载中的动画效果。
 chalk，可以给终端的字体加上颜色。
 
 log-symbols，可以在终端上显示出 √ 或 × 等的图标。
+
+## 在package.json中配置bin:
+```
+"bin": {
+    "dyk": "./index.js"
+},
+```
+
+## 在index.js文件中定义了以下命令：
+```
+program
+  .version(packageData.version)
+  .option("-i, --init", "初始化项目")
+  .option("-V, --version", "查看版本号信息")
+  .option("-l, --list", "查看可用的模板列表")
+program.parse(process.argv)
+```
+## yarn link 将dyk-cli link到全局
+
+## 新建一个项目  test-dyk-cli 然后执行 dyk --init 完成初始化

@@ -30,6 +30,12 @@ const templates = {
     description:
       "Umi-Hooks是一个中后台前端解决方案，它基于 umi, react, typescript 和 ant-design实现。",
   },
+  "cra-base-template": {
+    url: "https://github.com/dongyuekai/create_react_web_app",
+    downloadUrl: "https://github.com/dongyuekai/create_react_web_app#master",
+    description:
+      "cra-base-template是一个用cra脚手架搭建的React模板程序，它按需引入了antd、antd-mobile，添加了对px2rem和sass的支持",
+  }
 }
 
 // 定义版本 和 --help 信息

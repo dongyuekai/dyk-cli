@@ -70,7 +70,7 @@ if (program.opts() && program.opts().init) {
         type: "list",
         name: "template",
         message: "选择其中一个作为项目模版",
-        choices: ["ts-vue (vue+ts项目模版)", "umi-hooks (react+ts项目模版)"],
+        choices: ["ts-vue (vue+ts项目模版)", "umi-hooks (react+ts项目模版)","cra-base-template（基于CRA脚手架搭建的基础项目按需引入antd、antd-mobile,支持px2rem和scss）"],
       },
     ])
     .then(async answers => {

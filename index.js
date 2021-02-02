@@ -112,8 +112,8 @@ async function initTemplateDefault(customContent, gitUrl) {
 function checkName(projectName) {
   return new Promise((resolve, reject) => {
     fs.readdir(process.cwd(), (err, data) => {
-      console.log('dyk--process.cwd()---', process.cwd())
-      console.log('dyk----data---', data)
+      // console.log('dyk--process.cwd()---', process.cwd())
+      // console.log('dyk----data---', data)
       if (err) {
         return reject(err)
       }

@@ -70,12 +70,16 @@ if (program.opts() && program.opts().init) {
         type: "list",
         name: "template",
         message: "选择其中一个作为项目模版",
-        choices: ["ts-vue (vue+ts项目模版)", "umi-hooks (react+ts项目模版)","cra-base-template（基于CRA脚手架搭建的基础项目按需引入antd、antd-mobile,支持px2rem和scss）"],
+        choices: [
+          "ts-vue (vue+ts项目模版)",
+          "umi-hooks (react+ts项目模版)",
+          "cra-base-template (基于CRA脚手架搭建的基础项目按需引入antd、antd-mobile,支持px2rem和scss)"
+        ],
       },
     ])
     .then(async answers => {
       // 把采集到的用户输入的数据解析替换到 package.json 文件中
-      console.log('选择', answers.template.split(" ")[0])
+      console.log('选择了：', answers.template.split(" ")[0])
       let url = templates[answers.template.split(" ")[0]].downloadUrl
       await initTemplateDefault(answers, url)
     })
@@ -159,7 +163,8 @@ function changeTemplate(customContent) {
         packageContent.description = description
         fs.writeFile(
           path.resolve(process.cwd(), projectName, 'package.json'),
-          JSON.stringify(packageContent, null, 2),
+          JSON.stringify(packageContent, null, 2
+          ),
           "utf8",
           (err, data) => {
             if (err) {

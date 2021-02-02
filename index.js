@@ -32,7 +32,7 @@ const templates = {
   },
   "cra-base-template": {
     url: "https://github.com/dongyuekai/create_react_web_app",
-    downloadUrl: "https://github.com/dongyuekai/create_react_web_app#master",
+    downloadUrl: "https://github.com:dongyuekai/create_react_web_app#master",
     description:
       "cra-base-template是一个用cra脚手架搭建的React模板程序，它按需引入了antd、antd-mobile，添加了对px2rem和sass的支持",
   }

@@ -30,7 +30,7 @@ const templates = {
     description:
       "Umi-Hooks是一个中后台前端解决方案，它基于 umi, react, typescript 和 ant-design实现。",
   },
-  "cra-base-template": {
+  "cra-base-react": {
     url: "https://github.com/dongyuekai/create_react_web_app",
     downloadUrl: "https://github.com:dongyuekai/create_react_web_app#master",
     description:

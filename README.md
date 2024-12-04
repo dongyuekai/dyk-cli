@@ -30,8 +30,8 @@ program
 program.parse(process.argv)
 ```
 
-## yarn link 将dyk-cli link到全局使用 或者从npm hub下载dyk-cli包使用
-## 新建一个项目  test-dyk-cli 然后执行 dyk --init 完成初始化
+## npx dyk --init 或者从npm hub下载dyk-cli到全局后 dyk --init 使用
+## 新建一个项目  test-dyk-cli 然后执行 npx dyk --init 完成初始化
 
 dyk --version   查看版本信息
 dyk -i    初始化项目
